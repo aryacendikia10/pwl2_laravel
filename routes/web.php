@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AryaController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,4 +16,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+Route::get('/arya', [AryaController::class, 'index']);
+
+// Route::resource('/admin', [adminController::class]);
+
+// Route::get('/view','tryblade.child');
+Route::get('/view', function(){
+    return view('tryblade.child');
 });

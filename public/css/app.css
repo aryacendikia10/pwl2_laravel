@@ -1,0 +1,11 @@
+body {
+    background: #e6404b;
+}
+
+.container {
+    margin: 30px;
+}
+
+.alert {
+    color: aliceblue;
+}
